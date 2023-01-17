@@ -52050,6 +52050,11 @@ definitions:
     description: |-
       Version defines the versioning scheme used to negotiate the IBC verison in
       the connection handshake.
+  raffo.tris.tris.MsgCreateGameResponse:
+    type: object
+    properties:
+      gameIndex:
+        type: string
   raffo.tris.tris.Params:
     type: object
     description: Params defines the parameters for the module.
