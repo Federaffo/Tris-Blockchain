@@ -1,0 +1,14 @@
+syntax = "proto3";
+package raffo.tris.tris;
+
+import "gogoproto/gogo.proto";
+import "tris/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/raffo/tris/x/tris/types";
+
+// GenesisState defines the tris module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
