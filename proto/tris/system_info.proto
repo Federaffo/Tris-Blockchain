@@ -1,0 +1,9 @@
+syntax = "proto3";
+package raffo.tris.tris;
+
+option go_package = "github.com/raffo/tris/x/tris/types";
+
+message SystemInfo {
+  uint64 nextId = 1; 
+  
+}

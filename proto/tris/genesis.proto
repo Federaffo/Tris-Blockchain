@@ -3,6 +3,8 @@ package raffo.tris.tris;
 
 import "gogoproto/gogo.proto";
 import "tris/params.proto";
+import "tris/system_info.proto";
+import "tris/stored_game.proto";
 // this line is used by starport scaffolding # genesis/proto/import
 
 option go_package = "github.com/raffo/tris/x/tris/types";
@@ -10,5 +12,7 @@ option go_package = "github.com/raffo/tris/x/tris/types";
 // GenesisState defines the tris module's genesis state.
 message GenesisState {
   Params params = 1 [(gogoproto.nullable) = false];
+  SystemInfo systemInfo = 2 [(gogoproto.nullable) = false];
+  repeated StoredGame storedGameList = 3 [(gogoproto.nullable) = false];
   // this line is used by starport scaffolding # genesis/proto/state
 }

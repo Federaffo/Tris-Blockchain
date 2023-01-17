@@ -1,0 +1,14 @@
+syntax = "proto3";
+package raffo.tris.tris;
+
+option go_package = "github.com/raffo/tris/x/tris/types";
+
+message StoredGame {
+  string index = 1; 
+  string board = 2; 
+  string turn = 3; 
+  string x = 4; 
+  string o = 5; 
+  
+}
+
